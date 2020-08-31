@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "Neue Haas Grotesk";
+    src: url("https://type.cargo.site/NeueHaasGrotesk/NeueHaasGroteskTextRegular-3.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+    unicode-range: U+0000-DFFF, U+F900-FFFD;
+}
+
+body {
+    font-family: "Neue Haas Grotesk";
+    overflow: hidden;
+    margin: 0;
+    text-align: justify;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #000;
+}
+h1 {
+    font-size: 2.5em
+}
+
+h2 {
+    font-size: 2em
+}
+
+h3 {
+    font-size: 1.5em
+}
+
+a {
+    text-decoration: none;
+    color: #09f;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#top-nav {
+    position: fixed;
+    top: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    height: 10vh;
+    width: 3000px;
+}
+
+@media only screen and (min-width: 700px) {
+    #wrapper {
+        width: 100%;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    #left {
+        margin-top: 7vh;
+        padding-left: 2%;
+        padding-right: 3%;;
+        position: fixed;  
+        width: 30%;
+        border-right: 3px solid gray;
+        height:93vh;
+        overflow-y: scroll;
+        word-wrap: break-word;
+        box-sizing: content-box; /* So the width will be 100% + 17px */
+    }
+
+    #right {
+        margin-top: 7vh;
+        padding-left: 2%;
+        padding-right: 2%;
+        float:right;
+        height:93vh;
+        width: 60%;
+        overflow-y: scroll;
+        word-wrap: break-word;
+    }
+    .ticker {
+
+        flex-direction: row;
+        width: 3000px;
+        animation-name: anim;
+        animation-duration: 42s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #wrapper {
+        width: 100%;
+        background-color: #fff;
+        height: 90vh;
+        overflow: scroll;
+        margin-top: 10vh;
+        display: inline-block;
+    }
+    #left {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    #right {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    .ticker {
+        flex-direction: row;
+        width: 3000px;
+        animation-name: anim;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes anim {
+    0% {
+        margin-left: -910px;
+        
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+span.navbar {
+    margin-left: 20px; /* Esta es la separación entre el los elementos de la barra */
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+span.navbar-2 {
+    margin-left: 40px;  /* Esta es la separación entre Niqo y Contact */
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Colors for navbar items */
+a.home {
+    color: #ffb7bf;
+    text-decoration: none;
+}
+
+a.info {
+    color: #FFDB58;
+    text-decoration: none;
+}
+
+
+a.cv {
+    color: #957DAD;
+    text-decoration: none;
+}
+
+a.contact {
+    color: #0db800;
+    text-decoration: none;
+}
+
+.gray {
+    color:gray;
+}
+
+
+
+table.cvtable th {
+    vertical-align:top;
+    padding-right: 50px;
+    bottom-padding: 20px;
+    font-size: 16px;
+}
+
+table.cvtable td {
+    vertical-align:top;
+    color: rgb(20,20,20);
+    font-size: 14px;
+}
+
+table.cvtable {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+
+table.dict th {
+    padding-right: 10px;
+    vertical-align:top;
+}
+
+table.dict { /* Esta es el estilo del diccionario */
+    margin-top: 3em;
+    font-family: Courier New, monospace;
+    border-collapse: separate;
+    border-spacing: 0 3xpx;
+}
