@@ -13,8 +13,12 @@
 
   limit = 200;
 
-  size = Math.round(0.60*document.getElementById("right").offsetWidth);
-
+  h = document.getElementById("right").offsetHeight
+  if (h <= 0) {
+    size = Math.round(0.75*document.getElementById("right").offsetWidth);
+  } else {
+    size = Math.round(0.85*h);
+  }
   N = size * (window.devicePixelRatio || 1);
 
   canvas = document.createElement('canvas');
