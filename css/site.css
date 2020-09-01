@@ -197,3 +197,16 @@ table.dict { /* Esta es el estilo del diccionario */
     border-collapse: separate;
     border-spacing: 0 3xpx;
 }
+
+
+canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credits {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
