@@ -1,13 +1,14 @@
 @font-face {
-    font-family: "Neue Haas Grotesk";
-    src: url("https://type.cargo.site/NeueHaasGrotesk/NeueHaasGroteskTextRegular-3.woff") format("woff");
+    font-family: "SpaceGrotesk";
+    src: url("../NicolasAranedaHinrichs.github.io/SpaceGrotesk.woff2") format("woff2");
     font-style: normal;
     font-weight: normal;
     unicode-range: U+0000-DFFF, U+F900-FFFD;
 }
 
+
 body {
-    font-family: "Neue Haas Grotesk";
+    font-family: "SpaceGrotesk";
     overflow: hidden;
     margin: 0;
     text-align: justify;
